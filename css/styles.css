@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 18px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    width: 500px;
+    border: 1px solid red;
+    margin-top: 10%;
+    border-radius: 18px;
+}
+
+.cuadroUno{
+    width: 220px;
+    background-color: hsl(252, 100%, 67%);
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+.cuadroUno__titulo{
+    font-size: 1.5rem;
+}
+
+.cuadroUno__circulo{
+    background-color: red;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 12%;
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+}
+
+.cuadroUno__circulo__numeroUno{
+    font-weight: 800;
+    font-size: 3rem;
+    
+}
+.cuadroUno__circulo__chiquitos{
+    font-size: .8rem;
+}
+
+.cuadroUno__tituloDos{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.cuadroUno__parrafo{
+    font-size: .8rem;
+}
+
+
+.cuadroDos{
+    
+    text-align: center;
+}
+
+.cuadroDos ul{
+    list-style: none;
+}
