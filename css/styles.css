@@ -1,72 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
-*{
-    margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 89%);
+  display: flex;
+
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 700px;
+  margin-top: 10%;
+  border-radius: 24px;
+  background-color: white;
+  
+}
+
+.cuadroUno {
+  width: 350px;
+  height: 400px;
+  background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  border-radius: 24px;
+  padding: 32px;
+  color: white;
+  text-align: center;
+}
+
+.imra {
+  width: 18px;
+  margin-right: 10px;
+}
+
+.cuadroUno__titulo {
+  font-size: 1.1rem;
+  color: rgb(230, 230, 230);
+  margin-bottom: 27px;
+}
+.cuadroUno__circulo__numeroUno {
+  margin-top: 11px;
+}
+.cuadroUno__circulo__chiquitos {
+  color: rgba(230, 230, 230, 0.28);
+}
+.cuadroUno__circulo {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 5%;
+  /* margin-left: 15%;  */
+  margin: 0 auto;
+  margin-bottom: 1.5rem;
+}
+
+.cuadroUno__circulo__numeroUno {
+  font-weight: 800;
+  font-size: 3rem;
+}
+.cuadroUno__circulo__chiquitos {
+  font-size: 0.8rem;
+}
+
+.cuadroUno__parrafo {
+  color: rgb(203, 203, 203);
+}
+
+.cuadroUno__tituloDos {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cuadroUno__parrafo {
+  font-size: 0.8rem;
+}
+
+/* cuadro dos */
+
+.cuadroDos {
+  text-align: center;
+  padding: 32px;
+  width: 300px;
+  height: 400px;
+}
+
+.cuadroDos__tituloUno {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.cuadroDos ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  height: 35px;
+  width: 100%;
+  border: 0.1;
+  font-size: 13px;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.cuadroDos__textos {
+  box-sizing: border-box;
+  background-color: hsla(0, 100%, 67%, 0.182);
+  background-repeat: no-repeat;
+  color: hsl(0, 100%, 67%);
+}
+
+.cuadroDos__r {
+  color: black;
+}
+
+.cuadroDos__textos2 {
+  background-color: hsla(39, 100%, 56%, 0.224);
+  justify-content: space-around;
+  color: hsl(39, 100%, 56%);
+}
+.cuadroDos__textos3 {
+  background-color: hsla(166, 100%, 37%, 0.14);
+  color: hsl(166, 100%, 37%);
+}
+.cuadroDos__textos3 {
+  background-color: hsla(166, 100%, 37%, 0.188);
+}
+.cuadroDos__textos4 {
+  background-color: hsla(234, 85%, 45%, 0.184);
+  margin-bottom: 50px;
+  color: hsl(234, 85%, 45%);
+}
+button {
+  background-color: hsl(224, 30%, 27%);
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 12px 55px;
+  border-radius: 40px;
+}
+
+button:hover {
+  background: hsl(241, 81%, 54%);
+}
+
+@media screen and (max-width: 1402px) {
+  .container{
     padding: 0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Hanken Grotesk', sans-serif;
-    font-size: 18px;
-    background-color: hsl(0, 0%, 100%);
-    display: flex;
-    justify-content: center;
-}
-
-.container{
-    display: flex;
-    width: 500px;
-    border: 1px solid red;
-    margin-top: 10%;
-    border-radius: 18px;
-}
-
-.cuadroUno{
-    width: 220px;
-    background-color: hsl(252, 100%, 67%);
-    border-radius: 10px;
-    padding: 10px;
-    color: white;
-    text-align: center;
-}
-.cuadroUno__titulo{
-    font-size: 1.5rem;
-}
-
-.cuadroUno__circulo{
-    background-color: red;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    text-align: center;
-    padding: 12%;
-    margin-left: 15%;
-    margin-bottom: 1.5rem;
-}
-
-.cuadroUno__circulo__numeroUno{
-    font-weight: 800;
-    font-size: 3rem;
+    margin: 0;
+  }
+  .cuadroUno {
+    width: 100%;
+    border-radius: 0 0 24px;
+  }
+  .cuadroDos {
+    width: 100%;
     
-}
-.cuadroUno__circulo__chiquitos{
-    font-size: .8rem;
-}
-
-.cuadroUno__tituloDos{
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-}
-.cuadroUno__parrafo{
-    font-size: .8rem;
-}
-
-
-.cuadroDos{
-    
-    text-align: center;
-}
-
-.cuadroDos ul{
-    list-style: none;
+  }
 }
