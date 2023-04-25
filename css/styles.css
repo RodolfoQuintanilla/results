@@ -161,7 +161,7 @@ button:hover {
   }
   .cuadroUno {
     width: 100%;
-    border-radius: 0 0 24px;
+    border-radius: 0 0 24px 24px;
   }
   .cuadroDos {
     width: 100%;
